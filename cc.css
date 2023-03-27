@@ -1,0 +1,107 @@
+body{
+    background-color: white;
+    background-image: url('./CandyImages/background.png');
+    background-size: cover;
+    background-repeat:none;
+    height: 100vh;
+    width:100vw;
+    overflow-x:hidden;
+    position:relative;
+
+    
+    
+}
+.grid{
+  
+    width: 560px;
+    height: 560px;
+    
+    flex-wrap: wrap;
+    position: absolute;
+    bottom:20px;
+    left: 400px;
+    display: none;
+
+}
+.candy{
+    width: 66px;
+    height: 66px;
+    background-size: cover;
+    margin: 1px;
+    transition: 0.5s all ease-in-out;
+    
+}
+.candy:hover{
+    box-shadow: thistle;
+    transform: scale(0.9);
+}
+.grid{
+    transition: all 1s ease;
+}
+.btn{
+    width: 300px;
+    height: 100px;
+    font-size: 40px;
+    background-color: rgba(250, 108, 132, 0.2);
+    color: crimson;
+    text-transform: capitalize;
+    border-radius: 35%;
+    border: transparent;
+    left: 40px;
+    position:absolute;
+    bottom:10px;
+    transition: 1s all ease;
+}
+.btn:hover{
+    background-color: rgb(250, 79, 250);
+}
+.score{
+    background-color: pink;
+    color:palevioletred ;
+    width: 250px;
+    border: 10px solid rgb(241, 63, 32);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    left: 80px;
+}
+.score h1{
+    margin:  0 auto;
+    font-size: 40px;
+}
+@media (max-width:480px){
+    .candy{
+        width:36px;
+        height: 36px;
+    }
+    .grid{
+        height: 320px;
+        width: 320px;
+        transform:none;
+        position:absolute;
+         top:20px;
+         left:0;
+    }
+    body{
+        position:relative;
+        overflow-x:hidden;
+        width:100vw;
+    }
+    .score{
+        width:200px;
+        height:45px;
+        border-radius:20px;
+
+        border: none;
+        position: absolute;
+        bottom:180px;
+    }
+    .btn{
+        position:absolute;
+        height:45px;
+        bottom:100px;
+        width:150px;
+        margin: 0 auto;
+
+    }
+}
